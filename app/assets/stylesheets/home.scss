@@ -1,0 +1,109 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+*{
+  box-sizing: border-box;
+}
+html{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  font-family: "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", Meiryo, メイリオ, Osaka, "MS PGothic", arial, helvetica, sans-serif;
+  color: #272B2E;
+}
+.top{
+  padding: 10px;
+  z-index: 1;
+  position: relative;
+  width: 100%;
+  height: 80px;
+  display: block;
+}
+.logo{
+  float: left;
+  padding-left: 60px;
+  padding-top: 10px;
+  color: #2E2F30;
+}
+.menu{
+  float: right;
+  padding-right: 40px;
+}
+.menu li{
+  float: left;
+  list-style: none;
+  padding: 15px;
+  font-weight: bold;
+}
+.menu li a{
+  transition: all 0.2s ease;
+  text-decoration: none;
+  text-align: center;
+  color: #2E2F30;
+  outline: 0;
+}
+.menu li a:hover{
+  color: #3ecdc6;
+  transition-property: all;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-out;
+}
+.menu li .login{
+  border: 1px solid #3ecdc6;
+  padding: 10px 15px;
+  border-radius: 5px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  color: #3ecdc6;
+  background-color: #fff;
+}
+.menu li .login:hover{
+  color: #fff;
+  background-color: #3ecdc6;
+  letter-spacing: 0;
+}
+.main{
+  z-index: 1;
+  background-image: url(..);
+  background-attachment: fixed;
+  background-size: cover;
+  width: 100%;
+  max-width: 100%;
+  height: 450px;
+  text-align: center;
+  position: relative;
+  object-fit: cover;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+}
+.image{
+  text-align: center;
+  display: inline-block;
+}
+.company{
+  width: 100%;
+  max-width: 100%;
+  height: 100px;
+  text-align: center;
+  position: relative;
+  margin: 0;
+  background-size: cover;
+  border: 1px solid #CCCCCC;
+  display: inline-block;
+}
+.type{
+  margin: 10px auto;
+  display: inline-block;
+}
+.type li{
+  float: left;
+  padding: 20px 40px;
+  list-style: none;
+  text-align: center;
+}
