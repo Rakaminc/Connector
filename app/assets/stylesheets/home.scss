@@ -27,7 +27,7 @@ section{
   display: inline-block;
 }
 .top{
-  padding: 10px;
+  padding: 5px;
   z-index: 1;
   position: relative;
   width: 100%;
@@ -36,13 +36,19 @@ section{
 }
 .logo{
   float: left;
-  padding-left: 60px;
-  padding-top: 10px;
+  text-align: center;
+  padding-left: 70px;
+  padding-top: 15px;
   color: #2E2F30;
 }
 .menu{
   float: right;
   padding-right: 40px;
+}
+.menu .home{
+  padding-right: 70px;
+  font-size: 20px;
+  letter-spacing: 3px;
 }
 .menu li{
   float: left;
@@ -130,6 +136,133 @@ section{
 }
 .use{
   background-color: #F7F7F7;
+}
+
+.acount{
+  border-bottom: 1px solid #CCCCCC;
+  color: #999999;
+}
+.new{
+  width: 500px;
+  height: 510px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px 5px #EFEFEF;
+  display: inline-block;
+  text-align: center;
+  padding: 20px 10px;
+  margin-bottom: 30px;
+}
+.new p,
+.make p{
+  color: #fff;
+  font-weight: bold;
+  padding-top: 15px;
+  width: 220px;
+  height: 50px;
+  margin: 15px;
+  font-size: 13px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  text-align: center;
+  display: inline-block;
+  box-shadow: 0 0 5px 5px #EFEFEF;
+  transition: all 0.2s ease-out;
+}
+.facebook{
+  background-color: #3b5998;
+}
+.facebook:hover{
+  letter-spacing: 1px;
+  transition: all 0.2s ease-out;
+}
+.twitter{
+  background-color: #00aced;
+}
+.twitter:hover{
+  letter-spacing: 1px;
+  transition: all 0.2s ease-out;
+}
+.google{
+  background-color: #ea4335;
+}
+.google:hover{
+  letter-spacing: 1px;
+  transition: all 0.2s ease-out;
+}
+.new small{
+  padding-top: 10px;
+  color: #999999;
+  margin: 40px;
+}
+.new small a{
+  text-decoration: none;
+  color: #3ecdc6;
+}
+.new small a:hover{
+  border-bottom: 1px solid #3ecdc6;
+}
+.new .use_mail{
+  margin: 30px;
+  color: #3ecdc6;
+  border: 1px solid;
+  border-color: #3ecdc6;
+  box-shadow: none;
+  transition: all 0.2s ease-out;
+  letter-spacing: 2px;
+}
+.new .use_mail:hover{
+  color: #fff;
+  background-color: #3ecdc6;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -ms-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+.make{
+  width: 500px;
+  height: 500px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px 5px #EFEFEF;
+  display: none;
+  text-align: center;
+  padding: 20px 10px;
+  margin-bottom: 40px;
+}
+.make small{
+  padding-top: 10px;
+  color: #999999;
+  margin: 40px;
+}
+.make small a{
+  text-decoration: none;
+  color: #3ecdc6;
+}
+.make small a:hover{
+  border-bottom: 1px solid #3ecdc6;
+}
+.make .sns{
+  margin: 30px;
+  color: #3ecdc6;
+  border: 1px solid;
+  border-color: #3ecdc6;
+  box-shadow: none;
+  transition: all 0.2s ease-out;
+  letter-spacing: 2px;
+}
+.make .sns:hover{
+  color: #fff;
+  background-color: #3ecdc6;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -ms-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
 }
 
 footer{
