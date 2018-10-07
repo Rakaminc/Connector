@@ -249,10 +249,10 @@ jQuery.fn = jQuery.prototype = {
     },
 
     // Take an array of elements and push it onto the stack
-    // (returning the new matched element set)
+    // (returning the login matched element set)
     pushStack: function( elems ) {
 
-        // Build a new jQuery matched element set
+        // Build a login jQuery matched element set
         var ret = jQuery.merge( this.constructor(), elems );
 
         // Add the old object onto the stack (as a reference)
@@ -1576,7 +1576,7 @@ function internalData( elem, name, data, pvt /* Internal Use Only */ ){
     }
 
     if ( !id ) {
-        // Only DOM nodes need a new unique ID for each element since their data
+        // Only DOM nodes need a login unique ID for each element since their data
         // ends up in the global cache
         if ( isNode ) {
             elem[ internalKey ] = id = core_deletedIds.pop() || jQuery.guid++;
@@ -2571,7 +2571,7 @@ if ( !getSetAttribute ) {
                 undefined;
         },
         set: function( elem, value, name ) {
-            // Set the existing or create a new attribute node
+            // Set the existing or create a login attribute node
             var ret = elem.getAttributeNode( name );
             if ( !ret ) {
                 elem.setAttributeNode(
@@ -3330,7 +3330,7 @@ jQuery.removeEvent = document.removeEventListener ?
     };
 
 jQuery.Event = function( src, props ) {
-    // Allow instantiation without the 'new' keyword
+    // Allow instantiation without the 'login' keyword
     if ( !(this instanceof jQuery.Event) ) {
         return new jQuery.Event( src, props );
     }
@@ -4520,7 +4520,7 @@ getText = Sizzle.getText = function( elem ) {
         }
     } else if ( nodeType === 1 || nodeType === 9 || nodeType === 11 ) {
         // Use textContent for elements
-        // innerText usage removed for consistency of new lines (see #11153)
+        // innerText usage removed for consistency of login lines (see #11153)
         if ( typeof elem.textContent === "string" ) {
             return elem.textContent;
         } else {
@@ -4949,7 +4949,7 @@ Expr = Sizzle.selectors = {
 
         "text": function( elem ) {
             var attr;
-            // IE6 and 7 will map elem.type to 'text' for new HTML5 types (search, etc)
+            // IE6 and 7 will map elem.type to 'text' for login HTML5 types (search, etc)
             // use getAttribute instead to test this case
             return elem.nodeName.toLowerCase() === "input" &&
                 elem.type === "text" &&
@@ -5523,7 +5523,7 @@ function select( selector, context, results, seed ) {
 // Deprecated
 Expr.pseudos["nth"] = Expr.pseudos["eq"];
 
-// Easy API for creating new setFilters
+// Easy API for creating login setFilters
 function setFilters() {}
 Expr.filters = setFilters.prototype = Expr.pseudos;
 Expr.setFilters = new setFilters();
@@ -6902,7 +6902,7 @@ jQuery.extend({
         var ret, name,
             old = {};
 
-        // Remember the old values, and insert the new ones
+        // Remember the old values, and insert the login ones
         for ( name in options ) {
             old[ name ] = elem.style[ name ];
             elem.style[ name ] = options[ name ];
@@ -6951,7 +6951,7 @@ if ( window.getComputedStyle ) {
                 minWidth = style.minWidth;
                 maxWidth = style.maxWidth;
 
-                // Put in the new values to get a computed value out
+                // Put in the login values to get a computed value out
                 style.minWidth = style.maxWidth = style.width = ret;
                 ret = computed.width;
 
@@ -6995,7 +6995,7 @@ if ( window.getComputedStyle ) {
             rs = elem.runtimeStyle;
             rsLeft = rs && rs.left;
 
-            // Put in the new values to get a computed value out
+            // Put in the login values to get a computed value out
             if ( rsLeft ) {
                 rs.left = elem.currentStyle.left;
             }
@@ -7119,7 +7119,7 @@ function css_defaultDisplay( nodeName ) {
                 .css( "cssText", "display:block !important" )
             ).appendTo( doc.documentElement );
 
-            // Always write a new HTML skeleton so Webkit and Firefox don't choke on reuse
+            // Always write a login HTML skeleton so Webkit and Firefox don't choke on reuse
             doc = ( iframe[0].contentWindow || iframe[0].contentDocument ).document;
             doc.write("<!doctype html><html><body>");
             doc.close();
@@ -7208,7 +7208,7 @@ if ( !jQuery.support.opacity ) {
                 }
             }
 
-            // otherwise, set new filter values
+            // otherwise, set login filter values
             style.filter = ralpha.test( filter ) ?
                 filter.replace( ralpha, opacity ) :
                 filter + " " + opacity;
@@ -7809,7 +7809,7 @@ jQuery.extend({
                     if ( map ) {
                         if ( state < 2 ) {
                             for ( code in map ) {
-                                // Lazy-add the new callback in a way that preserves old ones
+                                // Lazy-add the login callback in a way that preserves old ones
                                 statusCode[ code ] = [ statusCode[ code ], map[ code ] ];
                             }
                         } else {
@@ -7874,7 +7874,7 @@ jQuery.extend({
         // We can fire global events as of now if asked to
         fireGlobals = s.global;
 
-        // Watch for a new set of requests
+        // Watch for a login set of requests
         if ( fireGlobals && jQuery.active++ === 0 ) {
             jQuery.event.trigger("ajaxStart");
         }
@@ -8480,7 +8480,7 @@ if ( xhrSupported ) {
             return {
                 send: function( headers, complete ) {
 
-                    // Get a new xhr
+                    // Get a login xhr
                     var handle, i,
                         xhr = s.xhr();
 

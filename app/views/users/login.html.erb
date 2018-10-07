@@ -1,0 +1,27 @@
+<header class="top">
+  <p class="logo">ロゴ</p>
+  <ul class="menu">
+    <li class="home"><a href="/public">TOP</a></li>
+  </ul>
+</header>
+
+<section>
+  <div class="new" id="new">
+    <h2 class="acount">ログイン</h2>
+
+    <%= form_for(login_url) do |f| %>
+      <%= f.email_field :email, id: "email", placeholder: "メールアドレス", required: true %>
+
+      <%= f.password_field :password , id: "password", placeholder: "パスワード", required: true %>
+      <%= f.submit "ログイン", id: "submit_button" %>
+
+    <% end %><br>
+    <small>アカウントをお持ちではないですか？  <a href="/new">新規登録</a></small>
+  </div>
+</section>
+
+<footer>
+  <small>Made by <a href="https://rakam.co">Rakam Inc</a></small><br>
+  <small>&copy;Rakam Inc All rights Reserved.</small>
+</footer>
+

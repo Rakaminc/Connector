@@ -2,10 +2,10 @@
 //     $(document).on('click', '#use_mail', function () {
 //         $("#make").show('slow');
 //         $(".make").css('display', 'inline-block');
-//         $("#new").hide();
+//         $("#login").hide();
 //     });
 //     $(document).on('click', '#sns', function () {
-//         $("#new").show('slow');
+//         $("#login").show('slow');
 //         $("#make").hide();
 //     });
 // });

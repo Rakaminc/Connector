@@ -162,15 +162,14 @@ $google: #ea4335;
     -o-transition: all 0.2s ease-out;
     transition: all 0.2s ease-out;
   }
-
   #new_user{
       width: 500px;
     input{
-      padding: 10px;
-      border-radius: 2px;
-      font-size: 100%;
-      margin: 15px;
-    }
+       padding: 10px;
+       border-radius: 2px;
+       font-size: 100%;
+       margin: 15px;
+     }
     #name{
       width: 20em;
       height: 3em;
@@ -193,4 +192,25 @@ $google: #ea4335;
       border: 1px solid #CCCCCC;
     }
   }
+  input{
+    padding: 10px;
+    border-radius: 2px;
+    font-size: 100%;
+    margin: 15px;
+  }
+  #email{
+    width: 20em;
+    height: 3em;
+    padding: 10px;
+    font-size: 100%;
+    border: 1px solid #CCCCCC;
+  }
+  #password{
+    width: 20em;
+    height: 3em;
+    padding: 10px;
+    font-size: 100%;
+    border: 1px solid #CCCCCC;
+  }
 }
+
