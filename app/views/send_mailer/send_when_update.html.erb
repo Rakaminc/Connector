@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta content="text/html; charset=UTF-8" />
+  <style type="text/css">
+    h2 {
+      color: #e7454a;
+    }
+    p hr {
+      color: #2d2a24;
+    }
+  </style>
+</head>
+<body>
+<h2>ユーザー名: <%= params[:user][:name] %> 様</h2>
+<hr />
+<p>
+  この度は「CONNECTOR」に登録ありがとうございます。
+  正式サービス開始までもうしばらくお待ち下さい。
+  by Rakam Inc
+</p>
+<p>
+  ユーザー名: <%= params[:user][:name] %><br>
+</p>
+<hr />
+<%= users_url(@user) %>
+</body>
+</html>

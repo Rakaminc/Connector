@@ -1,11 +1,11 @@
 <header class="top">
   <p class="logo">ロゴ</p>
   <ul class="menu">
-    <li class="home"><a href="/public">TOP</a></li>
+    <li class="home"><a href="/">TOPに戻る</a></li>
   </ul>
 </header>
 
-<section>
+<section class="login">
   <div class="new" id="new">
     <h2 class="acount">ログイン</h2>
 
@@ -16,6 +16,7 @@
       <%= f.submit "ログイン", id: "submit_button" %>
 
     <% end %><br>
+    <small>パスワードを忘れた方は <a href="">こちら</a></small><br><br>
     <small>アカウントをお持ちではないですか？  <a href="/new">新規登録</a></small>
   </div>
 </section>

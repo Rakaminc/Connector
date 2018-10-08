@@ -1,13 +1,15 @@
 <header class="top">
   <p class="logo">ロゴ</p>
   <ul class="menu">
-    <li class="home"><a href="/">TOP</a></li>
+    <li class="home"><a href="/">TOPに戻る</a></li>
   </ul>
 </header>
 
-<section>
+<section class="user">
   <div class="new" id="new">
     <h2 class="acount">アカウントを作成</h2>
+
+    <small><a href="/terms_of_service">利用規約</a>/<a href="/privacy_policy">プライバシーポリシー</a>に同意して</small><br>
 
     <%= form_for(@user) do |f| %>
       <%= f.text_field :name, id: "name", placeholder: "お名前", required: true%>
@@ -15,10 +17,10 @@
       <%= f.email_field :email, id: "email", placeholder: "メールアドレス", required: true%>
 
       <%= f.password_field :password , id: "password", placeholder: "パスワード", required: true%>
-      <%= f.submit "新規登録", id: "submit_button", onclick: "check_createform()"%>
+      <%= f.submit "新規登録", id: "submit_button"%>
 
     <% end %><br>
-    <small>アカウントをお持ちですか？  <a href="/login">ログイン</a></small>
+<!--    <small>アカウントをお持ちですか？  <a href="/login">ログイン</a></small>-->
   </div>
 </section>
 
